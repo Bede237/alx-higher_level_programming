@@ -9,4 +9,4 @@ def uppercase(str):
             new = new + ch
         else:
             new = new + ch
-    print(f"{new}")
+    print("{}".formant(new))
