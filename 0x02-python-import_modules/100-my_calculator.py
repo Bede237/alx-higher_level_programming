@@ -3,12 +3,11 @@ def main():
     import sys
     import calculator_1 as cal
 
-    n = int(sys.argv[1])
-    m = int(sys.argv[3])
-
     if (len(sys.argv) - 1) < 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
+    n = int(sys.argv[1])
+    m = int(sys.argv[3])
     if sys.argv[2] == "+":
         print("{} {} {} = {}".format(n, sys.argv[2], m, cal.add(n, m)))
     elif sys.argv[2] == "-":
