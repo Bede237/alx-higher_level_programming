@@ -3,7 +3,7 @@ def main():
     import sys
     i = 1
     n = len(sys.argv) - 1
-    print((n - 1), "argument", end='')
+    print((n), "argument", end='')
     if n == 1:
         print(":")
     elif n > 1:
@@ -11,8 +11,9 @@ def main():
     else:
         print("s.")
     if (n) > 0:
-        for i in range(n + 1):
-            print("{}: {}".format(i, sys.argv[i]))
+        for i, arg in enumerate(sys.argv):
+            if i > 0:
+                print("{}: {}".format(i, arg))
 
 
 if __name__ == "__main__":
