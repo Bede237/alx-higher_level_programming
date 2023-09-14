@@ -6,6 +6,6 @@ def uniq_add(my_list=[]):
     count = 0
     for i in my_list:
         if i not in new:
-            count +=  i
+            count += i
             new.append(i)
     return count
