@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
     if not my_list:
-        return None
+        return 0
     new = []
     count = 0
     for i in my_list:
